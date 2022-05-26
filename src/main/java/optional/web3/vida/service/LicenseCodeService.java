@@ -50,6 +50,7 @@ public class LicenseCodeService {
         }
 
         licenseCodeEntity.setMachineId(machineId);
+        licenseCodeRepository.save(licenseCodeEntity);
         return true;
     }
 }
